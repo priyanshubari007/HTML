@@ -1,0 +1,129 @@
+<!--
+1) Start the HTML document.
+   a) Use `<!DOCTYPE html>` to define the page as an HTML5 document.
+   b) Open the `<html>` tag.
+
+2) Create the head section.
+   a) Set the page title as "My Superhero Card".
+   b) Add internal CSS using the `<style>` tag.
+
+3) Style the main page body.
+   a) Add a dark blue background.
+   b) Set the text colour to white.
+   c) Use Arial as the font family.
+
+4) Style the superhero name.
+   a) Use `.hero-name` to target the main title.
+   b) Set a large font size.
+   c) Make the text bold.
+   d) Add yellow colour and orange text shadow.
+
+5) Style the superhero tagline.
+   a) Use `.tagline` to target the tagline.
+   b) Make the text italic.
+   c) Add light blue colour.
+   d) Use `text-transform: capitalize`.
+
+6) Style the section labels.
+   a) Use `.label` for headings like super powers and weaknesses.
+   b) Convert text to uppercase.
+   c) Underline the text.
+   d) Add coral colour.
+
+7) Style the powers and weaknesses.
+   a) Use `.power` to make powers bold and green.
+   b) Use `.weakness` to cross out weaknesses.
+
+8) Style the superhero badge.
+   a) Use `.badge` to target the badge.
+   b) Make it bold and golden.
+   c) Tilt it using `transform: rotate()`.
+
+9) Add the page content.
+   a) Add the superhero name.
+   b) Add the tagline.
+   c) Add sections for powers and weaknesses.
+   d) Add the badge and creator name.
+
+10) Close the `<body>` and `<html>` tags to complete the webpage.
+--><!DOCTYPE html>
+<html>
+   <head>
+      <title>My Superhero Card</title>
+      <style>
+
+
+         body  {
+            background-color: darkblue;
+            color: white;
+            font-family: Arial, sans-serif;
+         }
+
+         .hero-name {
+            font-size: 60px;
+            font-weight: bold;
+            color: yellow;
+            text-shadow: 3px 3px orange;
+         }
+
+         .tagline {
+            font-style: italic;
+            color: lightblue;
+            text-transform: capitalize;
+         }
+
+         .label {
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: coral;
+         }
+
+
+         .power {
+            font-weight: bold;
+            color: lightgreen;
+         }
+
+
+         .weakness  {
+            text-decoration: line-through;
+            color: gray;
+         }
+
+
+         .badge {
+            font-size: 20px;
+            font-weight: bold;
+            color: gold;
+            transform: rotate(15deg);
+         }
+         .made by  {
+            color: coral;
+            font-style: italic;
+         }
+         
+      </style>
+   </head>
+
+   <body>
+      <h1 class="hero-name">Thunder Kids</h1>
+      <p class="tagline">The Most Powerful Hero In The School</p>
+
+
+
+      <h2 clas="label">Super Powers</h2>
+      <p class="power">Can run faster than a cheetah</p>
+      <p class="power">Can lift a school bus</p>
+
+
+      <h2 class="label">weakness</h2>
+      <p class="weakness">Maths Homework</p>
+      <p class="weakness">Broccoli</p>
+
+
+      <p class="badge">Top Hero</p>
+
+      <p class="made-by">Created by Priyanshu Bari</p>
+
+   </body>
+</html>
